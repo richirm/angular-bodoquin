@@ -1,5 +1,5 @@
 header {
-    display: flex;
+    display: flex; 
     flex-direction: row;
     gap: 15px;
 
@@ -12,18 +12,22 @@ header {
         justify-content: center;
         align-items: center;
 
-        &:hover {
+         i {
+            font-size: 24px;
+         }
+
+         &:hover {
             background-color: #f1f1f1;
             border-radius: 50%;
             cursor: pointer;
-        }
+         }
     }
 
     .header_logo {
         width: 75px;
         height: 35px;
 
-        img  {
+        img {
             width: 100%;
         }
     }
@@ -37,14 +41,18 @@ header {
             border-radius: 20px;
             padding-left: 14px;
             padding-right: 14px;
-            border: 1px solid #c6c6c6;
+            border: 1px solid #C6C6C6;
             outline: none;
-            box-shadow: inset 1px 1px 3px 0px  #c5baba;
-
-            &:focus{
+            box-shadow: inset 1px 1px 3px 0px #c5baba;
+            &:focus {
                 border-color: #000000;
+
             }
+
         }
     }
 
+    .header_buscador {
+        background-color: #ffffff;
+    }
 }
