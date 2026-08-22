@@ -170,3 +170,9 @@ Ejemplos recomendados para esta arquitectura:
 - `feat` => Nuevas funcionalidades
 - `fix` => Resolucion de bugs o errores
 - `refactor` => Reestructurar o cambiar piezas de codigo
+
+
+### Accesibilidad web
+- titulo y descripcion
+- colores y saturacion
+- fuente y tamaño letra
