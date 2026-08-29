@@ -6,13 +6,11 @@
 
     main {
         flex-grow: 1;
-        background-color: green;
         display: flex;
         flex-direction: row;
 
         app-nav {
             width: 200px;
-            background-color: red;
         }
 
         .content {
