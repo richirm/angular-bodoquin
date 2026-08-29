@@ -1,0 +1,15 @@
+nav {
+    padding: 8px;
+
+    .nav-item {
+        display: flex;
+        flex-direction: row;
+        padding: 6px;
+        gap: 6px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #D9D9D9;
+        }
+    }
+}
