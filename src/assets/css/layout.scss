@@ -10,7 +10,9 @@
         flex-direction: row;
 
         app-nav {
-            width: 200px;
+            nav {
+                width: 200px;
+            }
         }
 
         .content {
