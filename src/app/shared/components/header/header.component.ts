@@ -12,7 +12,5 @@ export class HeaderComponent {
 
     onClickMenu() {
         this.navService.onOpen.next();
-
     }
-
 }

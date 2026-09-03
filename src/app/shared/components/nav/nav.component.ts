@@ -1,12 +1,11 @@
-import { Component, OnDestroy, OnInit } from "@angular/core";
+import { Component, OnDestroy, OnInit } from "@angular/core"
 import { NavService } from "../../services/nav.service";
 import { Subject, takeUntil } from "rxjs";
 
-@Component ({
+@Component({
     selector: 'app-nav',
     templateUrl: './nav.component.html',
     styleUrls: ['./nav.component.scss']
-
 })
 export class NavComponent implements OnInit, OnDestroy{
 
@@ -14,10 +13,10 @@ export class NavComponent implements OnInit, OnDestroy{
 
     destroy$= new Subject<void>();
 
-    constructor (private navService: NavService) {}
+    constructor(private navService: NavService) {}
 
     ngOnInit() {
-        this.suscribeOnOpen();
+        this.subcribeOnOpen();
     }
 
     ngOnDestroy() {
@@ -25,12 +24,10 @@ export class NavComponent implements OnInit, OnDestroy{
         this.destroy$.complete();
     }
 
-    suscribeOnOpen() {
+    subcribeOnOpen() {
         this.navService.onOpen.pipe(takeUntil(this.destroy$)).subscribe(() => {
-            this.isOpen = !this.isOpen
-
-        })
+            this.isOpen = !this.isOpen;
+        });
     }
-
-
+ 
 }
