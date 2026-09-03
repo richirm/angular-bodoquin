@@ -1,3 +1,28 @@
 .layout {
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+
+        app-nav {
+            nav{
+            width: 200px;
+            }
+        }
+
+        .content {
+            flex-grow: 1;
+            background-color: blue;
+        }
+    }
+
+    footer {
+        background-color: yellow;
+        height: 150px;
+    }
 }
