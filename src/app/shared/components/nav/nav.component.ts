@@ -9,7 +9,7 @@ import { Subject, takeUntil } from "rxjs";
 })
 export class NavComponent implements OnInit, OnDestroy{
 
-    isOpen: boolean = false;
+    isOpen: boolean = true;
 
     destroy$= new Subject<void>();
 
