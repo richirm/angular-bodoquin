@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavService } from '../../services/nav.service';
 
 @Component({
     selector: 'app-header',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+    constructor(private navService: NavService) {}
+
+    onClickMenu() {
+        this.navService.onOpen.next();
+
+    }
 
 }
