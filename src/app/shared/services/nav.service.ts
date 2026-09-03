@@ -5,5 +5,5 @@ import { Subject } from "rxjs";
 export class NavService {
 
     onOpen: Subject<void> = new Subject<void>();
-    
+
 }
