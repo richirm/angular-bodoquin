@@ -30,5 +30,4 @@ export class NavComponent implements OnInit, OnDestroy {
             this.isOpen = !this.isOpen;
         });
     }
-
 }
