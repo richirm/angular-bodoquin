@@ -5,7 +5,7 @@ footer {
 
     .footer-item {
         flex-grow:1;
-        display: 40px;
+        display: flex;
         padding: 40px;
 
         &:first-child {
