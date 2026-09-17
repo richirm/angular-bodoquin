@@ -8,7 +8,6 @@ import { NavComponent } from './shared/components/nav/nav.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 
 import { NavService } from './shared/services/nav.service';
-import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
