@@ -167,6 +167,8 @@ Ejemplos recomendados para esta arquitectura:
 - `git pull origin rama` => descargar los cambios del repositorio en nuestra rama local
 - `git fetch` => sincroniza el repositorio remoto con el repositorio local
 - `git commit "feat: [ID-TAREA] comentario"` => Estructura del mensaje del commit
+- `git stash` => Para guardar mis cambios locales en una memoria temporal del git para no hacer commit
+- `git stash pop` => Para recuperar mis cambios que mandé al stash
 - `feat` => Nuevas funcionalidades
 - `fix` => Resolucion de bugs o errores
 - `refactor` => Reestructurar o cambiar piezas de codigo
@@ -180,3 +182,15 @@ Ejemplos recomendados para esta arquitectura:
 
 ### Display flex trucos
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+# Versionado
+    1       .99         .0
+    1       .100        .0
+    1       .100        .1
+    1       .101        .0
+    1       .101        .1
+    1       .101        .2
+    2       .0          .0
+    mayor   .minor      .patch(fix o bug)
+            (features)
