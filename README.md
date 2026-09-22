@@ -176,3 +176,7 @@ Ejemplos recomendados para esta arquitectura:
 - titulo y descripcion
 - colores y saturacion
 - fuente y tamaño letra
+
+
+### Display flex trucos
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
