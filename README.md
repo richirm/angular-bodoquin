@@ -194,3 +194,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     2       .0          .0
     mayor   .minor      .patch(fix o bug)
             (features)
+
+
+# Lazyloading
+- Angular descarga los recursos de una page cuando el usuario va a visualizar realmente la page
