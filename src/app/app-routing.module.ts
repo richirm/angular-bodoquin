@@ -13,6 +13,18 @@ const routes: Routes = [
   {
     path: 'casas',
     loadChildren: () => import('./pages/casas/casas.module').then(m => m.casasModule)
+  },
+  {
+    path: 'motos',
+    loadChildren: () => import('./pages/motos/motos.module').then(m => m.motosModule)
+  },
+  {
+    path: 'juguetes',
+    loadChildren: () => import('./pages/juguetes/juguetes.module').then(m => m.juguetesModule)
+  },
+  {
+    path: 'videojuegos',
+    loadChildren: () => import('./pages/videojuegos/videojuegos.module').then(m => m.VideojuegosModule)
   }
 ];
 
