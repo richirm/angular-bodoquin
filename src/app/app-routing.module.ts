@@ -9,8 +9,13 @@ const routes: Routes = [
   {
     path:'carros',
     loadChildren: () => import('./pages/carros/carros.module').then(m => m.CarrosModule) 
+  },
+  {
+    path:'peliculas',
+    loadChildren: () => import('./pages/peliculas/peliculas.module').then(m => m.PeliculasModule) 
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
