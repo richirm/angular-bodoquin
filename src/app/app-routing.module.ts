@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'videojuegos',
     loadChildren: () => import('./pages/videojuegos/videojuegos.module').then(m => m.VideojuegosModule)
+  },
+  {
+    path: 'peliculas',
+    loadChildren: () => import('./pages/peliculas/peliculas.module').then(m => m.PeliculasModule)
   },  
 ];
 
