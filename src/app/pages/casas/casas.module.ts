@@ -1,10 +1,10 @@
 import { NgModule } from "@angular/core";
-import { casasComponent } from "./casas.component";
-import { casasRoutingModule } from "./casas-routing.module";
+import { CasasComponent } from "./casas.component";
+import { CasasRoutingModule } from "./casas-routing.module";
 
 @NgModule({
-    declarations: [casasComponent],
-    imports: [casasRoutingModule],
+    declarations: [CasasComponent],
+    imports: [CasasRoutingModule],
     providers: [],
 })
-export class casasModule {}
+export class CasasModule {}

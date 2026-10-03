@@ -1,10 +1,10 @@
 import { NgModule } from "@angular/core";
-import { carrosComponent } from "./carros.component";
-import { carrosRoutingModule } from "./carros-routing.module";
+import { CarrosComponent } from "./carros.component";
+import { CarrosRoutingModule } from "./carros-routing.module";
 
 @NgModule({
-    declarations: [carrosComponent],
-    imports: [carrosRoutingModule],
+    declarations: [CarrosComponent],
+    imports: [CarrosRoutingModule],
     providers: [],
 })
-export class carrosModule {}
+export class CarrosModule{}

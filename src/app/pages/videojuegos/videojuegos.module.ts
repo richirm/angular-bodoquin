@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { VideojuegosComponent } from "./videojuegos.component";
-import { VideojuegosRoutingModule } from "./videoJuegos-routing.module";
+import { VideojuegosRoutingModule } from "./videojuegos-routing.module";
 
 @NgModule({
     declarations: [VideojuegosComponent],

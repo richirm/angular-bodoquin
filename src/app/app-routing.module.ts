@@ -8,19 +8,19 @@ const routes: Routes = [
   },
   {
     path: 'carros',
-    loadChildren: () => import('./pages/carros/carros.module').then(m => m.carrosModule)
+    loadChildren: () => import('./pages/carros/carros.module').then(m => m.CarrosModule)
   },
   {
     path: 'casas',
-    loadChildren: () => import('./pages/casas/casas.module').then(m => m.casasModule)
+    loadChildren: () => import('./pages/casas/casas.module').then(m => m.CasasModule)
   },
   {
     path: 'motos',
-    loadChildren: () => import('./pages/motos/motos.module').then(m => m.motosModule)
+    loadChildren: () => import('./pages/motos/motos.module').then(m => m.MotosModule)
   },
   {
     path: 'juguetes',
-    loadChildren: () => import('./pages/juguetes/juguetes.module').then(m => m.juguetesModule)
+    loadChildren: () => import('./pages/juguetes/juguetes.module').then(m => m.JuguetesModule)
   },
   {
     path: 'videojuegos',
