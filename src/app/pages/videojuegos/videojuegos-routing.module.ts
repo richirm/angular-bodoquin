@@ -1,6 +1,7 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { VideojuegosComponent } from "./videojuegos.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+import { VideojuegosComponent } from './videojuegos.component';
 
 const routes: Routes = [
     {

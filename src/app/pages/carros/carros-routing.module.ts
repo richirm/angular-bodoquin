@@ -1,12 +1,13 @@
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
-import { CarrosComponent } from "./carros.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+import { CarrosComponent } from './carros.component';
 
 const routes: Routes = [
-   {  
-      path: '',
-      component: CarrosComponent
-   }  
+    {
+        path: '',
+        component: CarrosComponent
+    }
 ];
 
 @NgModule({
