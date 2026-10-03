@@ -5,6 +5,6 @@ import { PeliculasComponent } from './peliculas.component';
 
 @NgModule({
   declarations: [PeliculasComponent],
-  imports: [PeliculasRoutingModule]
+  imports: [PeliculasRoutingModule],
 })
 export class PeliculasModule {}

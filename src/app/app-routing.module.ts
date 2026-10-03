@@ -7,17 +7,29 @@ const routes: Routes = [
     loadChildren: () => import('./pages/ejemplo/ejemplo.module').then(m => m.EjemploModule)
   },
   {
+    path: 'peliculas',
+    loadChildren: () => import('./pages/peliculas/peliculas.module').then(m => m.PeliculasModule)
+  },
+  {
     path: 'carros',
     loadChildren: () => import('./pages/carros/carros.module').then(m => m.CarrosModule)
   },
   {
-    path: 'videojuegos',
-    loadChildren: () => import('./pages/videojuegos/videojuegos.module').then(m => m.VideojuegosModule)
+    path: 'casas',
+    loadChildren: () => import('./pages/casas/casas.module').then(m => m.CasasModule)
   },
   {
-    path: 'peliculas',
-    loadChildren: () => import('./pages/peliculas/peliculas.module').then(m => m.PeliculasModule)
-  },  
+    path: 'motos',
+    loadChildren: () => import('./pages/motos/motos.module').then(m => m.MotosModule)
+  },
+  {
+    path: 'juguetes',
+    loadChildren: () => import('./pages/juguetes/juguetes.module').then(m => m.JuguetesModule)
+  },
+  {
+    path: 'videojuegos',
+    loadChildren: () => import('./pages/videojuegos/videojuegos.module').then(m => m.VideojuegosModule)
+  }
 ];
 
 @NgModule({
