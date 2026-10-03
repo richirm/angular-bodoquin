@@ -1,0 +1,9 @@
+import { Component } from "@angular/core";
+
+
+@Component({
+    selector: 'app-carros',
+    templateUrl: './casas.component.html',
+    styleUrls: ['./casas.component.scss']
+})
+export class casasComponent {}
