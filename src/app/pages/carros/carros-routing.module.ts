@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { CarrosComponent } from "./carros.component";
 
-const routes: Routes= [
+const routes: Routes = [
    {  
       path: '',
       component: CarrosComponent
@@ -13,4 +13,4 @@ const routes: Routes= [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class CarrosRoutingModule{}
+export class CarrosRoutingModule {}

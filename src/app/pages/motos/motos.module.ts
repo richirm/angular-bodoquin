@@ -7,4 +7,4 @@ import { MotosRoutingModule } from "./motos-routing.module";
     imports: [MotosRoutingModule],
     providers: [],
 })
-export class MotosModule{}
+export class MotosModule {}

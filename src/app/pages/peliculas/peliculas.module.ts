@@ -7,4 +7,4 @@ import { PeliculasRoutingModule } from "./peliculas-routing.module";
     imports: [PeliculasRoutingModule],
     providers: [],
 })
-export class PeliculasModule{}
+export class PeliculasModule {}

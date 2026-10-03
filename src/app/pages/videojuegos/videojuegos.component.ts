@@ -5,4 +5,4 @@ import { Component } from "@angular/core";
     templateUrl: './videojuegos.component.html',
     styleUrls: ['./videojuegos.component.scss']
 })
-export class VideojuegosComponent{}
+export class VideojuegosComponent {}

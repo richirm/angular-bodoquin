@@ -7,4 +7,4 @@ import { JuguetesRoutingModule } from "./juguetes-routing.module";
     imports: [JuguetesRoutingModule],
     providers: [],
 })
-export class JuguetesModule{}
+export class JuguetesModule {}

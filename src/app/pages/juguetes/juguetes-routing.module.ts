@@ -4,8 +4,8 @@ import { JuguetesComponent } from "./juguetes.component";
 
 const routes: Routes= [
    {  
-      path: '',
-      component: JuguetesComponent
+        path: '',
+        component: JuguetesComponent
    }  
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes= [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class JuguetesRoutingModule{}
+export class JuguetesRoutingModule {}

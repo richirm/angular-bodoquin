@@ -7,4 +7,4 @@ import { VideojuegosRoutingModule } from "./videojuegos-routing.module";
     imports: [VideojuegosRoutingModule],
     providers: [],
 })
-export class VideojuegosModule{}
+export class VideojuegosModule {}

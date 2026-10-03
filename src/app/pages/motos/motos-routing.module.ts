@@ -4,8 +4,8 @@ import { MotosComponent } from "./motos.component";
 
 const routes: Routes= [
    {  
-      path: '',
-      component: MotosComponent
+        path: '',
+        component: MotosComponent
    }  
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes= [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class MotosRoutingModule{}
+export class MotosRoutingModule {}
