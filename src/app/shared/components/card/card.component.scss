@@ -1,0 +1,70 @@
+.card {
+    width: 250px;
+    border: 2px solid #e2e2e2;
+
+    &:hover {
+        box-shadow: 1px 1px 4px 0px #CCCCCC;
+
+    }
+
+    &-header {
+        &-porcentage {
+            background-color: #FF0000;
+            width: fit-content;
+            padding: 7px 20px;
+            position: absolute;
+            color: #FFFFFF;
+        }
+
+        &-image {
+            height: 145px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &-body {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &-subtitle {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        &-offer {
+            color: #FF0000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        &-price {
+            color: #7b7b7b;
+            text-decoration: line-through;
+        }
+    }
+
+    &-footer {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            flex-grow: 1;
+            background-color: #E2ff47;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #bac965;
+            }
+        }
+    }
+}
