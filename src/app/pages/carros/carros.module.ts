@@ -7,7 +7,11 @@ import { CardModule } from 'src/app/shared/components/card/card.module';
 
 @NgModule({
     declarations: [CarrosComponent],
-    imports: [CarrosRoutingModule, CardModule, CommonModule],
+    imports: [
+        CommonModule, 
+        CarrosRoutingModule,
+        CardModule
+    ],
     providers: [],
 })
 export class CarrosModule {}

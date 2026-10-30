@@ -17,7 +17,6 @@ export class CarrosComponent {
             percentage: 0.12,
             imageUrl: 'carro_rojo1.jpg',
         },
-
         {
             id: 2,
             title: 'Honda',
@@ -26,7 +25,6 @@ export class CarrosComponent {
             percentage: 0.10,
             imageUrl: 'carro_gris2.png',
         },
-
         {
             id: 3,
             title: 'Hyundai',
@@ -35,7 +33,6 @@ export class CarrosComponent {
             percentage: 0.8,
             imageUrl: 'carro_rojo1.jpg',
         },
-
         {
             id: 4,
             title: 'Renault',
@@ -44,7 +41,6 @@ export class CarrosComponent {
             percentage: 0.15,
             imageUrl:'carro_gris2.png',
         },
-
         {
             id: 5,
             title: 'Jac',
@@ -53,7 +49,6 @@ export class CarrosComponent {
             percentage: 0.10,
             imageUrl: 'carro_rojo1.jpg',
         },
- 
         {
             id: 6,
             title: 'Jetour',
