@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-header">
+        <div class="card-header-percentage">{{ percentage * 100 }}%</div>
+
+        <div class="card-header-image">
+            <img src="assets/img/{{ imageUrl }}" />
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="card-body-title">{{ title }}</div>
+        <div class="card-body-subtitle" title="{{ subtitle }}">
+            {{ subtitle }}
+        </div>
+        <div class="card-body-offer">S/. {{ (1 - percentage)*price | number:'1.2-2' }}</div>
+        <div class="card-body-price">S/. {{ price | number:'1.2-2' }}</div>
+    </div>
+
+    <div class="card-footer">
+        <button type="button">Agregar</button>
+    </div>
+</div>
