@@ -4,11 +4,10 @@
 
     &:hover {
         box-shadow: 1px 1px 4px 0px #CCCCCC;
+
     }
 
     &-header {
-    
-
         &-percentage {
             background-color: #FF0000;
             width: fit-content;
@@ -28,7 +27,7 @@
 
     &-body {
         padding: 10px;
-        display:flex;
+        display: flex;
         flex-direction: column;
         gap: 4px;
 
@@ -39,7 +38,7 @@
         }
 
         &-offer {
-            color:#FF0000;
+            color: #FF0000;
             font-weight: bold;
             font-size: 18px;
         }
@@ -57,18 +56,15 @@
 
         button {
             flex-grow: 1;
-            background-color: #E2FF47;
+            background-color: #E2ff47;
             padding: 10px 20px;
             border-radius: 20px;
             border: none;
             cursor: pointer;
 
             &:hover {
-                background-color: #cce82f;
+                background-color: #bac965;
             }
         }
     }
-
-
-
 }

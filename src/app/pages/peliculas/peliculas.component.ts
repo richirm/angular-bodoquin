@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from 'src/app/shared/interfaces/prooduct.interface';
+import { Product } from 'src/app/shared/interfaces/product.interface';
 
 @Component({
   selector: 'app-peliculas',
@@ -7,54 +7,54 @@ import { Product } from 'src/app/shared/interfaces/prooduct.interface';
   styleUrls: ['./peliculas.component.scss']
 })
 export class PeliculasComponent {
-  peliculas: Product[] = [
-          {
-              id: 1,
-              title: 'Resident Evil',
-              subtitle: 'Juego de terror y supervivencia',
-              price: 25000,
-              percentage: 0.12,
-              imageUrl: 'pelicula_1.png'
-          },
-          {
-              id: 2,
-              title: 'Crash Bandicoot',
-              subtitle: 'Aventura, plataformas y desafíos',
-              price: 18000,
-              percentage: 0.10,
-              imageUrl: 'pelicula_2.png'
-          },
-          {
-              id: 3,
-              title: 'Tekken',
-              subtitle: 'Juego de lucha con combates uno contra uno',
-              price: 15000,
-              percentage: 0.08,
-              imageUrl: 'pelicula_3.png'
-          },
-          {
-              id: 4,
-              title: 'Pokémon',
-              subtitle: 'Captura, entrena y colecciona criaturas',
-              price: 20000,
-              percentage: 0.09,
-              imageUrl: 'pelicula_4.png'
-          },
-          {
-              id: 5,
-              title: 'Dragon Ball',
-              subtitle: 'Combates y aventuras de Goku y sus amigos',
-              price: 22000,
-              percentage: 0.11,
-              imageUrl: 'pelicula_5.png'
-          },
-          {
-              id: 6,
-              title: 'Pac-Man',
-              subtitle: 'Juego arcade de laberintos y fantasmas',
-              price: 35000,
-              percentage: 0.15,
-              imageUrl: 'pelicula_6.png'
-          }
-      ];
+    peliculas: Product[] = [
+        {
+            id: 1,
+            title: 'resident evil',
+            subtitle: 'la vi en el cine',
+            price: 20.00,
+            percentage: 0.2,
+            imageUrl: 'pelicula_1.png',
+        },
+        {
+            id: 2,
+            title: 'titanic',
+            subtitle: 'muy romantico',
+            price: 345.00,
+            percentage: 0.10,
+            imageUrl: 'pelicula_2.png',
+        },
+        {
+            id: 3,
+            title: 'soy leyenda ',
+            subtitle: 'esperaremos ha que salga la dos',
+            price: 666.00,
+            percentage: 0.5,
+            imageUrl: 'pelicula_3.png',
+        },
+        {
+            id: 4,
+            title: 'fredy cruger',
+            subtitle: 'se peleo con jaison',
+            price: 989.00,
+            percentage: 0.15,
+            imageUrl: 'pelicula_4.png',
+        },
+        {
+            id: 5,
+            title: 'guerra mundial z',
+            subtitle: 'siempre la vemos',
+            price: 105.00,
+            percentage: 0.18,
+            imageUrl: 'pelicula_5.png',
+        },
+        {
+            id: 6,
+            title: 'la vida es bella',
+            subtitle: 'es una novela ',
+            price: 21.00,
+            percentage: 0.5,
+            imageUrl: 'pelicula_6.png',
+        }
+    ]
 }

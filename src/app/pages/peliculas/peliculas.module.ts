@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PeliculasRoutingModule } from './peliculas-routing.module';
 import { PeliculasComponent } from './peliculas.component';
-
-import { CardModule } from 'src/app/shared/components/card/card.module'
+import { CardModule } from 'src/app/shared/components/card/card.module';
 
 @NgModule({
     declarations: [PeliculasComponent],

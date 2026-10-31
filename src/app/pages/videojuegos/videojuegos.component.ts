@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from 'src/app/shared/interfaces/prooduct.interface';
+import { Product } from 'src/app/shared/interfaces/product.interface';
 
 @Component({
     selector: 'app-videojuegos',
@@ -11,51 +11,51 @@ export class VideojuegosComponent {
     videojuegos: Product[] = [
         {
             id: 1,
-            title: 'Resident Evil',
-            subtitle: 'Juego de terror y supervivencia',
-            price: 25000,
-            percentage: 0.12,
-            imageUrl: 'videojuego_1.png'
+            title: 'resident evil',
+            subtitle: 'Muertos, vivientes y sangre y muchas cosas mas',
+            price: 1000.00,
+            percentage: 0.8,
+            imageUrl: 'videojuego_1.png',
         },
         {
             id: 2,
-            title: 'Crash Bandicoot',
-            subtitle: 'Aventura, plataformas y desafíos',
-            price: 18000,
+            title: 'crash card',
+            subtitle: 'patines, acoord 205',
+            price: 20000.00,
             percentage: 0.10,
-            imageUrl: 'videojuego_2.png'
+            imageUrl: 'videojuego_2.png',
         },
         {
             id: 3,
-            title: 'Tekken',
-            subtitle: 'Juego de lucha con combates uno contra uno',
-            price: 15000,
-            percentage: 0.08,
-            imageUrl: 'videojuego_3.png'
+            title: 'teken ',
+            subtitle: 'peleas, mod 2017',
+            price: 150.00,
+            percentage: 0.8,
+            imageUrl: 'videojuego_3.png',
         },
         {
             id: 4,
-            title: 'Pokémon',
-            subtitle: 'Captura, entrena y colecciona criaturas',
-            price: 20000,
-            percentage: 0.09,
-            imageUrl: 'videojuego_4.png'
+            title: 'pokemon',
+            subtitle: 'esnorla, 2026 pikachu',
+            price: 105.00,
+            percentage: 0.15,
+            imageUrl: 'videojuego_4.png',
         },
         {
             id: 5,
-            title: 'Dragon Ball',
-            subtitle: 'Combates y aventuras de Goku y sus amigos',
-            price: 22000,
-            percentage: 0.11,
-            imageUrl: 'videojuego_5.png'
+            title: 'dragon ball',
+            subtitle: 'peleara con el gran freezer',
+            price: 870.00,
+            percentage: 0.113,
+            imageUrl: 'videojuego_5.png',
         },
         {
             id: 6,
-            title: 'Pac-Man',
-            subtitle: 'Juego arcade de laberintos y fantasmas',
-            price: 35000,
-            percentage: 0.15,
-            imageUrl: 'videojuego_6.png'
+            title: 'pacman',
+            subtitle: 'preparado para comer ',
+            price: 983.00,
+            percentage: 0.10,
+            imageUrl: 'videojuego_6.png',
         }
-    ];
+    ]
 }
