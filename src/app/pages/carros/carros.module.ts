@@ -8,7 +8,7 @@ import { CardModule } from 'src/app/shared/components/card/card.module';
 @NgModule({
     declarations: [CarrosComponent],
     imports: [
-        CommonModule, 
+        CommonModule,
         CarrosRoutingModule,
         CardModule
     ],
