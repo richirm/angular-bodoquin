@@ -4,14 +4,19 @@ import { CommonModule } from '@angular/common';
 import { PeliculasRoutingModule } from './peliculas-routing.module';
 import { PeliculasComponent } from './peliculas.component';
 import { CardModule } from 'src/app/shared/components/card/card.module';
+import { HttpClientModule } from '@angular/common/http';
+import { PeliculasService } from './services/peliculas.service';
 
 @NgModule({
     declarations: [PeliculasComponent],
     imports: [
         CommonModule, 
+        HttpClientModule,
         PeliculasRoutingModule,
         CardModule
     ],
-    providers: [],
+    providers: [
+        PeliculasService
+    ],
 })
 export class PeliculasModule {}
