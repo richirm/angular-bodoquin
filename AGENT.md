@@ -1,0 +1,1 @@
+- Si cuando te pido algo, verificas que no existe o implementado y tienes dudas entonces antes de decidir por ti mismo preguntame
