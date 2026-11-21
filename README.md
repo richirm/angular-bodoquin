@@ -198,3 +198,10 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 # Lazyloading
 - Angular descarga los recursos de una page cuando el usuario va a visualizar realmente la page
+
+
+# Comunicación con backend
+- GET: obtener, cuando el frontend necesita obtener datos del backend
+- POST: crear, cuando el frontend necesita enviar datos al backend para que esos datos se creen en la base de datos
+- PUT: actualizar, cuando el frontend necesita enviar datos al backend para actualizar algun registro de base de datos
+- DELETE: eliminar, cuando el frontend necesita eliminar algún registro de backend
