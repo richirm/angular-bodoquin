@@ -29,6 +29,14 @@ const routes: Routes = [
   {
     path: 'videojuegos',
     loadChildren: () => import('./pages/videojuegos/videojuegos.module').then(m => m.VideojuegosModule)
+  },
+  {
+    path: 'televisores',
+    loadChildren: () => import('./pages/televisores/televisores.module').then(m => m.TelevisoresModule)
+  },
+   {
+    path: 'celulares',
+    loadChildren: () => import('./pages/celulares/celulares.module').then(m => m.CelularesModule)
   }
 ];
 
