@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
-import { Product } from 'src/app/shared/interfaces/product.interface';
-import { CasasService } from './services/casas.services';
+import { Component, OnInit } from "@angular/core";
+import { Product } from "src/app/shared/interfaces/product.interface";
+import { CasasService } from "./service/casas.service";
 
 @Component({
     selector: 'app-casas',
@@ -9,21 +8,17 @@ import { CasasService } from './services/casas.services';
     styleUrls: ['./casas.component.scss']
 })
 export class CasasComponent implements OnInit {
-
     casas: Product[] = [];
-
+    
     constructor(private casasService: CasasService) {}
 
     ngOnInit() {
         this.getCasas();
     }
 
-    getCasas() {        
-        this.casasService.getCasas().subscribe((response) => {
+    getCasas() {
+        this.casasService.getCasas().subscribe((response) =>{
             this.casas = response;
-        });
+        })
     }
-
 }
-
-

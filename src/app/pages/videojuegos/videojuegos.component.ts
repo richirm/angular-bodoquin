@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/shared/interfaces/product.interface';
-import { VideojuegosService } from './services/videojuegos.service';
+import { VideojuegosService } from './service/videojuegos.service';
 
 @Component({
     selector: 'app-videojuegos',
@@ -9,17 +9,18 @@ import { VideojuegosService } from './services/videojuegos.service';
 })
 export class VideojuegosComponent implements OnInit {
 
-    videojuegos: Product[] = [];
+    videojuegos: Product[] = []
 
-    constructor(private videosjuegosService: VideojuegosService) {}
+    constructor(private videojuegosService: VideojuegosService) { }
 
-    ngOnInit() {
+    ngOnInit(): void {
         this.getVideojuegos();
     }
-    
+
     getVideojuegos() {
-        this.videosjuegosService.getVideojuegos().subscribe((response) => {
+        this.videojuegosService.getVideojuegos().subscribe((response) => {
             this.videojuegos = response;
-        });
+        })
+
     }
 }

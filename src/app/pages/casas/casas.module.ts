@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-
-import { CardModule } from 'src/app/shared/components/card/card.module';
-import { CasasRoutingModule } from './casas-routing.module';
-import { CasasService } from './services/casas.services';
-import { CasasComponent } from './casas.component';
+import { NgModule } from "@angular/core";
+import { CasasComponent } from "./casas.component";
+import { CasasRoutingModule } from "./casas-routing.module";
+import { CasasService } from "./service/casas.service";
+import { HttpClientModule } from "@angular/common/http";
+import { CardModule } from "src/app/shared/components/card/card.module";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [CasasComponent],
@@ -13,10 +12,10 @@ import { CasasComponent } from './casas.component';
         CommonModule,
         HttpClientModule,
         CasasRoutingModule,
-        CardModule
+        CardModule,
     ],
     providers: [
-        CasasService
+        CasasService,
     ],
 })
 export class CasasModule {}

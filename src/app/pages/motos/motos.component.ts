@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-
-import { Product } from 'src/app/shared/interfaces/product.interface';
-import { MotosService } from './services/motos.service';
+import { Component, OnInit } from "@angular/core";
+import { Product } from "src/app/shared/interfaces/product.interface";
+import { MotosService } from "./service/motos.service";
 
 @Component({
     selector: 'app-motos',
     templateUrl: './motos.component.html',
     styleUrls: ['./motos.component.scss']
 })
-export class MotosComponent implements OnInit {
+export class MotosComponent implements OnInit{
 
     motos: Product[] = [];
 
@@ -18,10 +17,9 @@ export class MotosComponent implements OnInit {
         this.getMotos();
     }
 
-    getMotos() {        
-        this.motosService.getMotos().subscribe((response) => {
+    getMotos() {
+        this.motosService.getMotos().subscribe((response) =>{
             this.motos = response;
-        });
+        })
     }
-
 }

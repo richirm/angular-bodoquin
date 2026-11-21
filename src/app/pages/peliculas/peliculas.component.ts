@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Product } from 'src/app/shared/interfaces/product.interface';
-import { PeliculasService } from './services/peliculas.service';
+import { PeliculasService } from './services/peliculas.services';
 
 @Component({
     selector: 'app-peliculas',
@@ -9,19 +8,19 @@ import { PeliculasService } from './services/peliculas.service';
     styleUrls: ['./peliculas.component.scss']
 })
 export class PeliculasComponent implements OnInit {
-
-    peliculas: Product[] = [];
+    peliculas: Product[] = []
 
     constructor(private peliculasService: PeliculasService) {}
 
-    ngOnInit() {
+    ngOnInit(): void {
         this.getPeliculas();
     }
 
-    getPeliculas() {        
-        this.peliculasService.getPeliculas().subscribe((response) => {
+    getPeliculas() {
+        this.peliculasService.getPeliculas().subscribe((response) =>{
             this.peliculas = response;
-        });
-    }
+        })
 
+    }
+    
 }

@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
-import { Product } from 'src/app/shared/interfaces/product.interface';
-import { JuguetesService } from './services/juguetes.service';
+import { Component, OnInit } from "@angular/core";
+import { Product } from "src/app/shared/interfaces/product.interface";
+import { JuguetesService } from "./service/juguetes.service";
 
 @Component({
     selector: 'app-juguetes',
@@ -9,21 +8,17 @@ import { JuguetesService } from './services/juguetes.service';
     styleUrls: ['./juguetes.component.scss']
 })
 export class JuguetesComponent implements OnInit {
-
     juguetes: Product[] = [];
-
+    
     constructor(private juguetesService: JuguetesService) {}
 
     ngOnInit() {
-        this.getjuguetes();
+        this.getJuguetes();
     }
 
-    getjuguetes() {        
-        this.juguetesService.getJuguetes().subscribe((response) => {
+    getJuguetes() {
+        this.juguetesService.getJuguetes().subscribe((response) =>{
             this.juguetes = response;
-        });
+        })
     }
-
 }
-
-
