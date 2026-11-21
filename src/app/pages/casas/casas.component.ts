@@ -10,15 +10,15 @@ import { CasasService } from "./service/casas.service";
 export class CasasComponent implements OnInit {
     casas: Product[] = [];
     
-        constructor(private casasService: CasasService) {}
-    
-        ngOnInit() {
-            this.getCasas();
-        }
-    
-        getCasas() {
-            this.casasService.getCasas().subscribe((response) =>{
-                this.casas = response;
-            })
-        }
+    constructor(private casasService: CasasService) {}
+
+    ngOnInit() {
+        this.getCasas();
+    }
+
+    getCasas() {
+        this.casasService.getCasas().subscribe((response) =>{
+            this.casas = response;
+        })
+    }
 }

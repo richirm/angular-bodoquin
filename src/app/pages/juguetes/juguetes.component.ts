@@ -10,15 +10,15 @@ import { JuguetesService } from "./service/juguetes.service";
 export class JuguetesComponent implements OnInit {
     juguetes: Product[] = [];
     
-        constructor(private juguetesService: JuguetesService) {}
-    
-        ngOnInit() {
-            this.getJuguetes();
-        }
-    
-        getJuguetes() {
-            this.juguetesService.getJuguetes().subscribe((response) =>{
-                this.juguetes = response;
-            })
-        }
+    constructor(private juguetesService: JuguetesService) {}
+
+    ngOnInit() {
+        this.getJuguetes();
+    }
+
+    getJuguetes() {
+        this.juguetesService.getJuguetes().subscribe((response) =>{
+            this.juguetes = response;
+        })
+    }
 }
