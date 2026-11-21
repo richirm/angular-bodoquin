@@ -1,1 +1,10 @@
-pantalla de casas
+<div class="cards-container">
+    <app-card
+        *ngFor="let product of casas"
+        [title]="product.title"
+        [subtitle]="product.subtitle"
+        [price]="product.price"
+        [percentage]="product.percentage"
+        [imageUrl]="product.imageUrl"
+    ></app-card>
+</div>
